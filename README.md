@@ -9,5 +9,5 @@ As the problems may vary, the instructions too will vary. As such, it is extreme
 ## Files in this Repository
 
 | File Name | Description |
-| --- | --- | --- |
+| --- | --- |
 |[vowel_swap.py](https://github.com/Alouie412/random_problem_land/blob/master/vowel_swap.py) | Python problem that swaps the position of all vowels (and y) |
