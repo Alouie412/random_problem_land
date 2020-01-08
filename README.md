@@ -1,6 +1,6 @@
 # Assortment of Random Problems
 
-This repository contains random problems not used in any Holberton School's projects, but may appear in various places such as problems given by other people, mock interviews, or online.
+This repository contains random problems not used in any of Holberton School's projects, but may appear in various places such as problems given by other people, mock interviews, or online.
 
 # Description
 
