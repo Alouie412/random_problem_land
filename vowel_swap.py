@@ -2,6 +2,7 @@
 
 # Vowel Swapper~
 # This program takes in a user input from stdin, and swaps all vowel characters found
+# Currently only supports 1 word. Use underscores to pass in multiple words
 
 import sys
 
@@ -14,6 +15,9 @@ else:
     new_list = list(string)
     end = length - 1
     begin = 0
+    # We assume y is a vowel here, buy y is only a vowel depending on usage
+    # For example, Xylophone vs Yosemite
+    vowels = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5, 'y': 6}
 
     print("Input: {}".format(string))
     print("After swapping...")
@@ -21,14 +25,12 @@ else:
     # For whatever reason begin is being reset in this loop, so begin was traded out for a dummy variable
     for loop in range (length):
         for end in range (end, begin - 1, -1):
-            # There is probably a better way to write out this list of conditions
-            # We also assume y is a vowel here, but y is only a vowel depending on usage
-            # For example, Xylophone vs Yosemite
-            if new_list[end] == 'a' or new_list[end] == 'e' or new_list[end] == 'i' or new_list[end] == 'o' or new_list[end] == 'u' or new_list[end] == 'y':
+            # Scans dictionary for a match. Much better than 6 if statements in one line
+            if new_list[end] in vowels:
                 break
 
         for begin in range (begin + 1, end + 1, 1):
-            if new_list[begin] == 'a' or new_list[begin] == 'e' or new_list[begin] == 'i' or new_list[begin] == 'o' or new_list[begin] == 'u' or new_list[begin] == 'y':
+            if new_list[begin] in vowels:
                 break
         if begin >= end:
             break
