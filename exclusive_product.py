@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 # Importing math. Unfortunately anything with math
-# only works with Python 3.8 and up
+# only works with Python 3.8 and up. Python 3.7
+# and below will have to use the self defined function instead
 import math
 
 new_arr = []
